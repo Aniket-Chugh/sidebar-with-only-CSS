@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.main-box{
+ position: relative;
+ background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg) ;
+ background-size: cover;
+ height: 100vh;
+ width: 100%;
+ padding: 0px;
+
+}
+
+
+.sidebar-main{
+  position: absolute;
+    background-color: rgb(255, 255, 255 , 0.1);
+    width: 15%;
+    box-shadow: 6px 7px 12px 0px;
+    height: 100%;
+    left: -280px;
+}
+
+ul{
+  list-style: none;
+  padding: 4px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+
+}
+
+.logo{
+  box-shadow: 0px 2px 0px 0px  rgb(255, 255, 255 , 0.5);
+  line-height: 60px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links{
+  font-size: 29px;
+ position: absolute;
+  
+}
+
+li{
+  padding: 14px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: -13px;
+}
+
+.social_links{
+  margin-top: 611px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+i{
+  margin-right: 12px;
+}
+
+
+li:hover{
+  box-shadow: 3px 2px 4px 0px  rgb(255, 255, 255 , 0.3);
+  width: 140%;
+  height: 60px;
+  border-left: 12px solid black;
+}
+
+
+#check{
+  display: none;
+}
+
+.main-box .btn-one i{
+color: white;
+font-size: 30px;
+font-weight: 700;
+position: absolute;
+left: 16px;
+line-height: 60px;
+cursor: pointer;
+opacity: 1;
+transition: all 0.3 linear;
+}
+
+
+.sidebar-main .btn-two i{
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  right: 2px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3 linear;
+  top: -1px; 
+}
+
+#check:checked ~.sidebar-main{
+  left: 0px;
+}
+
+
+#check:checked ~.btn-one i{
+  opacity: 0;
+}
